@@ -11,8 +11,7 @@ var mongoose = require("mongoose");
 //const local_db = 'mongodb://localhost:27017/tourapp';
 //const local_db = 'mongodb://superuser2:superuser2@ds147723.mlab.com:47723/homeaway_lab2';
 const mlab_db =
-  "mongodb://superuser2:superuser2@ds147723.mlab.com:47723/homeaway_lab2";
-
+  "mongodb+srv://travelappdb:travelappdb@cluster0-m1klw.mongodb.net/tourapp?retryWrites=true&w=majority";
 mongoose
   .connect(mlab_db)
   .then(() => console.log("MongoDB Connected"))
